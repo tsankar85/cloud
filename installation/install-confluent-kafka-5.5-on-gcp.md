@@ -38,5 +38,21 @@ sudo systemctl status confluent-zookeeper
 ```bash
 sudo systemctl start confluent-server.service
 ```
+     Start Schema Registry
+sudo systemctl start confluent-schema-registry
+
+     Start other Confluent Platform components as desired.
+sudo systemctl start confluent-control-center
+sudo systemctl status confluent-control-center
+
+sudo systemctl start confluent-kafka-rest
+sudo systemctl status confluent-kafka-rest
+
+sudo systemctl start confluent-kafka-connect
+sudo systemctl status confluent-kafka-connect
+
+sudo systemctl start confluent-ksqldb
+sudo systemctl status confluent-ksqldb
+
 
 
